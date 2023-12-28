@@ -1,0 +1,85 @@
+.header{
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #fff;
+}
+.action-bar{
+  height: 80px;
+  margin-top: 1px;
+  display: flex;
+  gap: 2px;
+  .action-item{
+    background: #fff;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    span{
+      font-size: 26px;
+    }
+  }
+}
+.scrollX-box{
+  width: 100%;
+  height: 400px;
+  .scrollX-header{
+    height: 60px;
+    line-height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    font-size: 28px;
+    .scrollX-header-title{
+      font-weight: bold;
+    }
+  }
+  .scrollX-content{
+    //width: 100vw;
+    white-space: nowrap;
+    //height: 300px;
+    //display: flex;
+    .scrollX-content-item{
+      //height: 300px;
+      //width: 180px;
+      .item-img{
+        display: block;
+        width: 400px;
+        height: 220px;
+        border-radius: 10px 10px 0 0;
+
+      }
+      display: inline-block;
+      .item-content{
+        background: #fff;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        box-sizing: border-box;
+        .item-name{
+          font-weight: bold;
+          font-size: 28px;
+        }
+        .item-score{
+          font-size: 28px;
+        }
+        .item-desc{
+          font-size: 28px;
+        }
+        .item-btn{
+          width: 200px;
+          height: 80px;
+          background:#eeb236;
+          border-radius: 40px;
+          font-size: 24px;
+          text-align: center;
+          line-height: 80px;
+        }
+      }
+    }
+  }
+
+}
