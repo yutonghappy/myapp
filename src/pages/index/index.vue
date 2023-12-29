@@ -21,37 +21,36 @@
         <div class="scrollX-header-area"> See all </div>
       </div>
       <scroll-view :scroll-x="true" class="scrollX-content">
-        <view class="scrollX-content-item">
-          <img :src="Img"  class="item-img"/>
-          <div class="item-content">
-            <div class="item-name">
-              Providence
-            </div>
-            <div class="item-score">
-              807
-            </div>
-            <div class="item-desc">
-              Seafood
-            </div>
-            <div class="item-btn">
-              Find a table
-            </div>
-          </div>
-
-        </view>
+        <DefaultItem/>
+        <DefaultItem/>
+        <DefaultItem/>
+        <DefaultItem/>
+        <DefaultItem/>
       </scroll-view>
     </div>
+    <div class="scrollX-box">
+        <div class="scrollX-header">
+          <div class="scrollX-header-title">
+            Browse Los Angeles by Meal
+          </div>
+        </div>
+      <scroll-view :scroll-x="true" class="scrollX-content">
+        <SmallItem/>
+        <SmallItem/>
+        <SmallItem/>
+        <SmallItem/>
+      </scroll-view>
+    </div>
+    <LargeItem/>
   </div>
 </template>
 
 <script lang="ts" setup>
 import './index.scss'
 import Img from '../../assets/images/img1.jpg'
-import { Horizontal,Image as ImageIcon, Search,
-  Locationg3,
-  MoreX
-} from '@nutui/icons-vue';
-// import { Image } from '@nutui/nutui';
-import { Image } from '@nutui/nutui';
+import { Horizontal,Image as ImageIcon, Search, Locationg3, MoreX } from '@nutui/icons-vue';
+import SmallItem from "@/components/Small-Item.vue";
+import DefaultItem from "@/components/default-Item.vue";
+import LargeItem from "@/components/large-Item.vue";
 
 </script>
